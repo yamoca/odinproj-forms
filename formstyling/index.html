@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8' />
+    <title>Speaker Submission</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <header class='speaker-form-header'>
+        <h1>Speaker Submission</h1>
+        <p><em>Want to speak at our fake conference? Fill out
+                this form.</em></p>
+    </header>
+    <form action="" class="speaker-form">
+        <div class="form-row">
+            <label for="full-name">Name</label>
+            <input type="text" id="full-name" name="name">
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="yourname@exmaple.com">
+        </div>
+        
+        <fieldset class="legacy-form-row">
+            <legend>Type of talk</legend>
+            <div>
+                <input type="radio" name="talk-type" id="talk-type1">
+                <label for="talk-type1">Main Stage</label>
+            </div>
+            <div>
+                <input type="radio" name="talk-type" id="talk-type2" checked>
+                <label for="talk-type2">Workshop</label>
+            </div>
+        </fieldset>
+
+        <div class="form-row">
+            <label for="size-selector">T-Shirt size</label>
+            <select name="size-selector" id="size-selector">
+                <option value="xs">Extra Small</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="abstract">Abstract</label>
+            <textarea name="abstract" id="abstract"></textarea>
+            <div class="instructions">Describe your talk in 500 words or less</div>
+        </div>
+
+        <div class="form-row">
+            <input type="checkbox" name="available" id="available">
+            <label for="available">I am actually available the date of the talk</label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
