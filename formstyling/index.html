@@ -26,11 +26,11 @@
             <legend>Type of talk</legend>
             <div>
                 <input type="radio" name="talk-type" id="talk-type1">
-                <label for="talk-type1">Main Stage</label>
+                <label for="talk-type1" class="radio-label">Main Stage</label>
             </div>
             <div>
                 <input type="radio" name="talk-type" id="talk-type2" checked>
-                <label for="talk-type2">Workshop</label>
+                <label for="talk-type2" class="radio-label">Workshop</label>
             </div>
         </fieldset>
 
@@ -51,11 +51,15 @@
         </div>
 
         <div class="form-row">
-            <input type="checkbox" name="available" id="available">
-            <label for="available">I am actually available the date of the talk</label>
+            <label for="available" class="checkbox-label">
+                <input type="checkbox" name="available" id="available">
+                <span>I'm actually available the date of the talk</span>
+            </label>
         </div>
 
-        <button type="submit">Submit</button>
+        <div class="form-row">
+            <button type="submit">Submit</button>
+        </div>
     </form>
 </body>
 </html>
