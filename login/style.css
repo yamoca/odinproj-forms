@@ -3,3 +3,60 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+}
+
+.left {
+    background-image: url(aarn-giri-vOp4CRHGWbk-unsplash.jpg);
+    width: 40vw;
+    height: 100vh;
+}
+
+.right {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.disclaimer {
+    background-color: lightgrey;
+    height: 25vh;
+}
+
+.form-section {
+    background-color: grey;
+    height: 50vh;
+    padding: 50px 0 0 80px;
+}
+
+.form-section h1 {
+    font-size: 50px;
+    margin-bottom: 30px; 
+}
+
+form {
+    display: flex;
+    gap: 200px;
+}
+
+form .form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+form .form-row input {
+    width: 500px;
+    height: initial;
+}
+
+form .form-row label {
+    width: 120px;
+}
+
+.cta {
+    background-color: lightgrey;
+    height: 25vh;
+}

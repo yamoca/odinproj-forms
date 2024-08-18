@@ -42,79 +42,24 @@ body {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    flex-wrap: wrap;body {
-        display: flex;
-        margin: 0;
-    }
-    
-    body > div {
-        /* flex: auto; */
-    }
-    
-    img {
-        width: inherit;
-    }
-    
-    .side-panel {
-        height: 100vh;
-        background-image: url(aarn-giri-vOp4CRHGWbk-unsplash.jpg);
-    }
-    
-    .left {
-        width: 45vw;
-    }
-    
-    .right {
-        display: flex;
-        flex-direction: column;
-        width: 55vw;
-    }
-    
-    .disclaimer, .form, .cta {
-        flex: 1 1 0;
-    }
-    
-    .disclaimer {
-        background-color: red;
-    }
-    
-    .disclaimer h1 {
-        font-size: 60px;
-        padding: 5rem;
-    }
-    
-    .form {
-        background-color: blue;
-        flex: 2 1 0;
-    }
-    
-    .cta {
-        background-color: blueviolet;
-    }
-    
-    form {
-        display: flex;
-        gap: 50px;
-    }
-    
-    input {
-        width: 1000px;
-        height: 200px;
-        font-size: 100px;
-    }
-    
-    label {
-        width: 10rem;
-        height: 4rem;
-        font-size: 3rem;
-        margin: 100px;
-    }
+    flex-wrap: wrap;
     
     border-radius: 3px;
     width: 100%;
     padding: 7px;
     font-size: 14px;
 }
+
+.form-row input[type='text'],
+.form-row input[type='email'],
+.form-row select {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
 
 .form-row textarea {
     font-family: "Helvetica", "Arial", sans-serif;
@@ -166,15 +111,15 @@ body {
   
     padding: 10px 40px;
     cursor: pointer;
-  }
+}
   
-  .form-row button:hover {
+.form-row button:hover {
     background-color: #76AEED;
-  }
+}
   
-  .form-row button:active {
+.form-row button:active {
     background-color: #407FC7;
-  }
+}
 
 .legacy-form-row {
     border: none;
