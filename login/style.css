@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+:root {
+    --div-padding: 50px 80px 80px 80px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,21 +25,58 @@ body {
     height: 100vh;
 }
 
+.banner {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40vw;
+    top: 17.5%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    margin: 10px;
+    width: 150px;
+}
+
+.logo h1 {
+    font-size: 160px;
+    font-family: Norse-Bold;
+}
+
 .right {
     width: 60vw;
     display: flex;
     flex-direction: column;
 }
 
-.disclaimer {
+.disclaimer, .cta {
     background-color: #f9fafb;
     height: 33vh;
+    padding: var(--div-padding);
+}
+
+.disclaimer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.disclaimer h1 {
+    width: 50ch;
+    margin-top: 50px;
+    font-size: 36px;
 }
 
 .form-section {
     background-color: #FFFFFF;
     height: 33vh;
-    padding: 50px 80px 80px 80px;
+    padding: var(--div-padding); 
 
     display: flex;
     flex-direction: column;
@@ -74,7 +120,18 @@ form .form-row label {
     font-weight: bold;
 }
 
-.cta {
-    background-color: #f9fafb;
-    height: 33vh;
+.cta button {
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #2D5621;
+    color: white;
+
+    padding: 15px 75px 15px 75px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.cta a {
+    text-decoration: none;
 }

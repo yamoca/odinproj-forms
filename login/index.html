@@ -9,18 +9,21 @@
 </head>
 <body>
     <div class="left">
-        <div class="side-panel">
-            side-panel
+        <div class="banner">
+            <div class="logo">
+                <img src="odin-lined.png" alt="">
+                <h1>Odin</h1>
+            </div>
         </div>
     </div> 
     <div class="right">
         <div class="disclaimer">
-            <h1>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams <br> Sign up <em>now</em> to get started</h1> 
+            <h1>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. <br> Sign up <em>now</em> to get started.</h1> 
             <h1>You <em>know</em> you want to.</h1>
         </div>
         <div class="form-section">
             <h1>Lets do this!</h1>
-            <form action="">
+            <form id="account-creation-form" action="">
                 <div class="col">
                     <div class="form-row">
                         <label for="first-name">First Name</label>
@@ -52,7 +55,8 @@
             </form>
         </div>
         <div class="cta">
-            call to action
+            <button type="submit" form="account-creation-form">Create Account</button>
+            <p>Already have an account? <a href="/">Log in</a></p>
         </div>
     </div>
 </body>
